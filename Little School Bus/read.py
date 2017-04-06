@@ -6,8 +6,8 @@ HEADER_OFFSET = int(sys.argv[1])
 with open("littleschoolbus.bmp", "rb") as img:
 	bytes = bytearray(img.read())
 
-# Should be from offset+1 onward
-bytes = bytes[HEADER_OFFSET+1:]
+bytes = bytes[HEADER_OFFSET:]
+print(len(bytes))
 
 buffer = ""
 
