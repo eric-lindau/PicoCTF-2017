@@ -1,0 +1,6 @@
+Flag located inside the file yarn.dsm
+
+; section: .rodata
+0x8048538:   03 00 00 00 01 00 02 00  53 75 62 00 6d 69 74 00   |........Sub.mit.|
+0x8048548:   5f 6d 65 00 5f 66 6f 00  72 5f 49 00 5f 61 6d 00   |_me._fo.r_I._am.|
+0x8048558:   5f 74 68 00 65 5f 66 00  6c 61 67 00               |_th.e_f.lag.    |
