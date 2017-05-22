@@ -2,7 +2,7 @@
 PicoCTF 2017 Write-up!
 
 Team: WANHackers  
-Members:  
+Members:
 - Kevin Park
 - Fisher Darling
 - Eric Lindau
